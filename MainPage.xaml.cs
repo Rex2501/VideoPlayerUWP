@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System.Diagnostics;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 
@@ -12,13 +13,13 @@ namespace VideoPlayer {
 
         public MainPage() {
             this.InitializeComponent();
-
-
         }
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             base.OnNavigatedTo(e);
 
             mySwapChainPanel.StartRenderLoop();
+
+            Debug.WriteLine("SwapChainPanel RenderLoop started");
 
         }
 
