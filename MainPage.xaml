@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="VideoPlayer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VideoPlayer"
+    xmlns:renderer="using:LibVDWUP.DXGraphics"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:renderer1="using:LibVDWUP.DXGraphics"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1600" Height="900">
+
+    <Grid x:Name="Output" Grid.Row="1">
+        <renderer:DXHelperWrapper x:Name="mySwapChainPanel" Height="720" Width="1280"></renderer:DXHelperWrapper>
+    </Grid>
+
+</Page>
